@@ -1,0 +1,32 @@
+Durante a etapa de separar o codigo em modulos, encontrei esses problemas:
+
+Variaveis "sumiram"
+O que nao funcionava: 
+Assim que movi as funcoes (tipo informarRenda) do main.c para o entrada.c,
+o compilador começou a dar erro dizendo que 'salario', 'aluguel' e as outras variaveis nao estavam declaradas.
+
+como descobri: 
+Tentando compilar logo depois de criar o arquivo entrada.c.
+
+Como corrigi: 
+Entendi que as variaveis estavam presas no main. Para resolver, criei o arquivo 'include/globais.h'. 
+Assim, declarei a variavel 'dados' uma vez so, mas deixei ela disponivel para todos os arquivos.
+
+Erro no terminal
+O que nao funcionava: Tentei compilar usando o comando antigo que eu usava na Parte 2 (gcc src/main.c), mas deu erro dizendo que as funcoes nao existiam.
+
+Como descobri:
+O terminal mostrou varias mensagens de "undefined reference to 'informarRenda'", etc.
+
+Como corrigi: 
+Aprendi que precisa compilar todos os arquivos .c juntos. Mudei o comando para incluir tudo (src/entrada.c src/processamento.c src/saida.c) e funcionou.
+
+Lixo de memoria na soma
+O que nao funcionava: Na primeira vez que testei a calculadora de gastos, o valor total começava com um numero maluco aleatorio em vez de zero.
+
+Como descobri: 
+Rodando o programa e vendo que o saldo final estava dando negativo sem motivo.
+
+Como corrigi: 
+Percebi que eu nao tinha dado um valor inicial para a struct. 
+Adicionei no começo da main() umas linhas zerando as variaveis (dados.gastos_adicionais = 0.0) para limpar a memoria antes de usar.

@@ -1,0 +1,37 @@
+O codigo foi dividido em entrada, processamento e saida
+
+Modulo: Entrada de Dados
+Juntei aqui tudo que pede pro usuário digitar alguma coisa (os scanfs). É a parte que coleta as informações. 
+
+void informarRenda()
+
+void informarGastosFixos()
+
+void calculadoraGastos() 
+
+Dependencias:
+Usa o "globais.h" pra conseguir gravar o que o usuário digitou apontando direto para a struct.
+
+Modulo: Processamento
+Aqui fica a parte logica, onde os dados do usuario são processados e transformados em informações importantes.
+nada dentro desse modulo pede dados ao usuario, é a parte responsavel por a matematica do codigo.
+
+void calcularTotais()
+
+void planejarObjetivoFuturo()
+
+Usa o "globais.h" pra ler os valores.
+
+Modulo: Saida 
+Tudo que o usuario vê. Só serve pra mostrar os menus e os relatórios na tela pro usuário ver.
+
+int exibirMenu();
+
+void exibirSaldo(); 
+
+Precisa do "globais.h" pra pegar os valores calculados e mostrar na tela.
+
+
+Modulo: Definicoes 
+necessario pra definir a struct e a variável global que o programa todo usa. 
+a função principal é organizar os dados.

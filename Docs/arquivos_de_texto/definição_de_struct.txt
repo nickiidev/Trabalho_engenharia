@@ -1,0 +1,30 @@
+Nome da Struct
+DadosFinanceiros
+
+Descricao
+criada para agrupar as variaveis assim mantendo a organização, evitando variaveis soltas pelo codigo
+
+Campos que ela contem
+Rendas
+- double salario: Valor do salario mensal informado pelo usuario.
+- double renda_extra: Valor de outras entradas de dinheiro.
+- double renda_total: A soma do salario com a renda extra.
+
+Gastos Fixos
+- double aluguel: Valor do aluguel.
+- double energia: Valor da conta de luz.
+- double agua: Valor da conta de agua.
+- double internet: Valor da conta de internet.
+- double compras_supermercado: Valor das compras do mes.
+
+Gastos Variaveis
+- double gastos_adicionais
+Guarda, e soma os gastos adicionais.
+
+Total
+- Double gastos_basicos: Soma os gastos basicos (apenas eles).
+- Double total_gastos_mes: soma os gastos fixos com os adicionais.
+- Double saldo_final: Renda - total de gastos, para ter o valor restande to salario da pessoa.
+
+Arrays
+não achei função dentro do codigo que faria sentido de usar Arrays na Struct.

@@ -1,0 +1,10 @@
+# Ignorar executaveis
+*.exe
+*.o
+
+# Ignorar pastas de configuracao do VS Code
+.vscode/
+
+# Ignorar arquivos temporarios
+*.log
+backup/
